@@ -14,11 +14,14 @@ class Produto {
     public $nome;
     public $preco;
     public $categoria;
+    public $quantidade_estoque;
 
-    public function __construct($codigo, $nome, $preco, $categoria){
+    public function __construct($codigo, $nome, $preco, $categoria,$quantidade_estoque){
         $this->codigo = $codigo;
         $this->nome = $nome;
         $this->preco = $preco;
         $this->categoria = $categoria;
+        $this->quantidade_estoque = $quantidade_estoque;
+
     }
 }
